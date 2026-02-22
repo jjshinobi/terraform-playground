@@ -33,6 +33,4 @@ resource "github_branch_default" "default" {
   lifecycle {
     ignore_changes = [rename]
   }
-
-  depends_on = [github_repository.repos]
 }
